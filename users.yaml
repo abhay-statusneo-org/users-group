@@ -96,6 +96,7 @@ apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
   name: abhay-statusneo
+  role: engineer
 spec:
   memberOf: [team-a]
 ---
