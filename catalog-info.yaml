@@ -5,6 +5,97 @@ metadata:
   description: Group of Privileged Users
 spec:
   type: team
-  owner: user:abhay-statusneo
-  members: [the-ceo, abhay-statusneo]
+  members: [the-ceo]
   children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: team-a
+  description: Team that built System A
+spec:
+  type: team
+  members: [utkarshneo, abhay-statusneo]
+  children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: team-b
+  description: Team that built System A
+spec:
+  type: team
+  members: [guneetshai,abhay-statusneo]
+  children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: devs
+  description: Group of All Developers
+spec:
+  type: team
+  members: [dev-a1]
+  children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: qas
+  description: Group of All Testers
+spec:
+  type: team
+  members: [qa-a1]
+  children: []
+---
+
+
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: the-ceo
+spec:
+  memberOf: [privileged]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: lead-a
+spec:
+  memberOf: [devs]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: lead-b
+spec:
+  memberOf: [qas]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: dev-a1
+spec:
+  memberOf: [team-a,devs]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: qa-a1
+spec:
+  memberOf: [team-a,qas]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: dev-b1
+spec:
+  memberOf: [team-b,devs]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: qa-b1
+spec:
+  memberOf: [team-b,qas]
+---
