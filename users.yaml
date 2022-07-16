@@ -113,3 +113,10 @@ metadata:
 spec:
   memberOf: [team-b,qas]
 ---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: admin-backstage
+spec:
+  memberOf: []
+---
