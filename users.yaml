@@ -99,6 +99,7 @@ metadata:
   role: engineer
 spec:
   memberOf: [team-a]
+  role: engineer
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
