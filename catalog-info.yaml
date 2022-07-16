@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: privileged
+  description: Group of Privileged Users
+spec:
+  type: team
+  members: [the-ceo, abhay-statusneo]
+  children: []
