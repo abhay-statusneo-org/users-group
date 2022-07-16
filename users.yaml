@@ -96,10 +96,10 @@ apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
   name: abhay-statusneo
-  description: engineer
-  annotations: 
-    role: engineer
 spec:
+  profile:
+    displayName: abhay pratap singh
+    role: engineer
   memberOf: [team-a]
   role: engineer
 ---
