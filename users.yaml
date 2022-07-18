@@ -98,6 +98,8 @@ metadata:
   name: abhay-statusneo
   email: abhay.singh@statusneo.com
   description: admin
+  labels:
+    example.com/custom: custom_label_value
 spec:
   profile:
     displayName: abhay pratap singh
