@@ -95,7 +95,7 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
-  name: abhay-statusneo
+  name: abhay.singh@statusneo.com
   email: abhay.singh@statusneo.com
   description: admin
   labels:
