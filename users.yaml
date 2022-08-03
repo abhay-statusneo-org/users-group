@@ -117,6 +117,13 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
+  name: abhay-mck
+spec:
+  memberOf: [team-a]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
   name: qa-b1
 spec:
   memberOf: [team-b,qas]
